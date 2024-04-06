@@ -19,5 +19,8 @@
   "homepage": "https://github.com/MateuszKar2/goit-node-hw-01#readme",
   "devDependencies": {
     "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
   }
 }
