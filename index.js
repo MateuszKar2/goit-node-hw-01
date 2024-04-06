@@ -1,43 +1,40 @@
-//2)
-// import pliku contact.js
+const contact = require('./contact');
+require('colors');
+const { Command } = require("commander");
 
-//import pakietu yargs LUB moduł Commander
-
-//funkcja invokeAction(wykorzystać)
-
-//3)
-//uruchom polecenia w terminalu i zrobić screenshotty
-
-//odpowiednie odnośniki dodać do pliku Readme
-
-console.log('jestem');
-
-const { Command } = require('commander');
 const program = new Command();
 program
-    .option("-a, --action <type>", "choose action") 
+  .option("-a, --action <type>", "choose action")
+  .option("-i, --id <type>", "user id")
+  .option("-n, --name <type>", "user name")
+  .option("-e, --email <type>", "user email")
+  .option("-p, --phone <type>", "user phone");
 
+program.parse(process.argv);
+
+const argv = program.opts();
 function invokeAction({ action, id, name, email, phone }) {
-    switch (action) {
-        case "list":
+  switch (action) {
+    case "list":
+      console.table(contact.listContacts());
+      break;
 
-        break;
+    case "get":
+      console.log(contact.getContactById(id));
+      break;
 
-        case "get":
+    case "add":
+      console.log(contact.addContact(name, email, phone));
+      break;
 
-        break;
+    case "remove":
+      contact.removeContact(id);
+      console.log(`Contact with id ${id} has been removed`)
+      break;
 
-        case "add":
-
-        break;
-
-        case "remove":
-
-        break;
-
-        default:
-            console.warn("\x1B[31m Unknown action type!");
-    }
+    default:
+        console.warn("\x1B[31m Unknown action type!");
+  }
 }
 
-invokeAction(argv)
+invokeAction(argv);
