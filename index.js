@@ -1,5 +1,5 @@
 const contact = require('./contact');
-equire('colors');
+require('colors');
 const { Command } = require("commander");
 
 const program = new Command();
