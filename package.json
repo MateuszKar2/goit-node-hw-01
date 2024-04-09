@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "start:dev": "nodemon index.js"
+    "start:dev": "nodemon index.js",
+    "list": "node index.js --action list",
+    "get": "node index.js --action get --id 05olLMgyVQdWRwgKfg5J6",
+    "add": "node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-22",
+    "remove": "node index.js --action remove --id qdggE76Jtbfd9eWJHrssH"
   },
   "repository": {
     "type": "git",
@@ -21,7 +25,9 @@
     "nodemon": "^3.1.0"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "commander": "^12.0.0",
+    "nanoid": "^5.0.7",
     "uuid": "^9.0.1"
   }
 }

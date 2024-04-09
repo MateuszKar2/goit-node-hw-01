@@ -1,5 +1,5 @@
-const contact = require('./contact');
-require('colors');
+const contacts = require("./contact.js")
+require("colors");
 const { Command } = require("commander");
 
 const program = new Command();
@@ -16,24 +16,24 @@ const argv = program.opts();
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
-      console.table(contact.listContacts());
+      console.table(contacts.listContacts());
       break;
 
     case "get":
-      console.log(contact.getContactById(id));
+      console.log(contacts.getContactsById(id));
       break;
 
     case "add":
-      console.log(contact.addContact(name, email, phone));
+      console.log(contacts.addContact(name, email, phone));
       break;
 
     case "remove":
-      contact.removeContact(id);
-      console.log(`Contact with id ${id} has been removed`)
+      contacts.removeContact(id);
+      console.log(`Contact with id ${id} has been removed.`);
       break;
 
     default:
-        console.warn("\x1B[31m Unknown action type!");
+      console.warn("\x1B[31m Unknown action type!");
   }
 }
 
