@@ -32,18 +32,18 @@ To run the application, follow these steps:
 - **Get Contact by ID**: To retrieve a specific contact by providing its unique ID, use the following command:
    ```bash
    npm run get
-![Get contact] https://ibb.co/TW5J9Tw (picture/node_get.png)
+![Get contact](picture/node_get.png) https://ibb.co/TW5J9Tw 
 
 ## Add
 
 - **Add New Contact**: To add a new contact to the contact list, use the following command:
    ```bash
    npm run add
-![Add contact] https://ibb.co/wpG8Wrf (picture/node_list.png)
+![Add contact](picture/node_list.png) https://ibb.co/wpG8Wrf 
 
 ## Remove
 
 - **Remove Contact**: To delete a contact from the contact list by specifying its unique ID, use the following command:
    ```bash
    npm run remove
-![Remove contact] https://ibb.co/P6rPj6X (picture/node_remove.png)
+![Remove contact](picture/node_remove.png) https://ibb.co/P6rPj6X 
