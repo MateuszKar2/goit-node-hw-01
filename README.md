@@ -1,9 +1,3 @@
-# goit-node-hw-01
-
-https://ibb.co/Pcs5Xxb
-https://ibb.co/TW5J9Tw
-https://ibb.co/wpG8Wrf
-https://ibb.co/P6rPj6X
 
 # CLI Application - Homework
 
@@ -30,26 +24,26 @@ To run the application, follow these steps:
 
 - **List Contacts**: To view all the contacts in the contact list, use the following command:
   ```bash
-  npm run test:list
-![List contacts] https://ibb.co/Pcs5Xxb (picture/node_add.png)
+  npm run list
+![List contacts](picture/node_add.png) https://ibb.co/Pcs5Xxb
 
 ## Get
 
 - **Get Contact by ID**: To retrieve a specific contact by providing its unique ID, use the following command:
    ```bash
-   npm run test:get
+   npm run get
 ![Get contact] https://ibb.co/TW5J9Tw (picture/node_get.png)
 
 ## Add
 
 - **Add New Contact**: To add a new contact to the contact list, use the following command:
    ```bash
-   npm run test:add
+   npm run add
 ![Add contact] https://ibb.co/wpG8Wrf (picture/node_list.png)
 
 ## Remove
 
 - **Remove Contact**: To delete a contact from the contact list by specifying its unique ID, use the following command:
    ```bash
-   npm run test:remove
+   npm run remove
 ![Remove contact] https://ibb.co/P6rPj6X (picture/node_remove.png)
