@@ -3,9 +3,9 @@
 
 ## Description
 
-This is a Command Line Interface (CLI) application designed as a simple contacts management system. The application allows users to interact with a contact list by performing various actions, such as listing all contacts, adding a new contact, getting a contact by its ID, and removing a contact from the list.
+This Command Line Interface (CLI) application is a simple contact management system. It allows users to manage their contact list by performing various actions, such as listing all contacts, adding a new contact, retrieving a contact by its ID, and removing a contact.
 
-The application is built using Node.js and utilizes the fs module for file system operations, enabling contacts to be stored in a JSON file. It also leverages the popular yargs library for parsing command-line arguments, making it easy and intuitive for users to interact with the application through the terminal.
+Built with Node.js, the application utilizes the fs module for file system operations, storing contacts in a JSON file. Additionally, it makes use of the popular yargs library to parse command-line arguments, providing an intuitive and user-friendly interface for interacting with the application via the terminal.
 
 ## Getting Started
 
